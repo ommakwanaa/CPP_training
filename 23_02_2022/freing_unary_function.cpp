@@ -14,23 +14,23 @@ class space{
         cout<<"\nx="<<a<<"\ny="<<b<<"\nz="<<c;
     }
     //freind function
-    friend space operator++(space value){
-            space temp;
-            cout<<"\ninside freind";
-            temp.a = ++value.a;
-            temp.b = ++value.b;
-            temp.c = ++value.c;
-            return temp;
+    friend complex operator ++ ();
 
-    }
 };//end of class
+space operator++(int){
+        space temp;
+        cout<<"\ninside freind";
+        temp.a = a++;
+        temp.b = b++;
+        temp.c = c++;
+        return temp;}
+
 int main(){
 space q2;
 space q1(5,5,5);
-space q3(5,5,5);
 q1.display();
-q2 = ++q3;
-q2.display();
+q1 = q1++;
+q1.display();
 return 0;
 
 }
