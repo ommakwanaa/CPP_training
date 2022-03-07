@@ -1,4 +1,4 @@
-// inheritance
+// multiple inheritance
 
 #include <iostream>
 using namespace std;
