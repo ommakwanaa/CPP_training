@@ -8,11 +8,11 @@ class Student{
     public:
         int roll_no;
         string name;
-        Student(int roll, string n){
-            roll_no = roll;
-            name = n;
-        }
-        Student(){cout<<"";}
+        // Student(int roll, string n){
+        //     roll_no = roll;
+        //     name = n;
+        // }
+        // Student(){cout<<"";}
         void studentinfo(){
             cout<<"student name: "<<name<<endl<<"roll number: "<<roll_no<<endl;
         }
@@ -21,9 +21,9 @@ class Student{
 class Test{
     public:
         int subject_marks[5];
-        Test(){
-            cout<<"";
-        }
+        // Test(){
+        //     cout<<"";
+        // }
         void display(){
             for (int i = 0; i < 5; i++){
                 cout<<subject_marks[i]<<"\t";
@@ -35,7 +35,7 @@ class Test{
 class Resulttt : public Student, public Test{
     int total, percentage;
     public:
-    Resulttt(){}
+    // Resulttt(){}
     void totalmarks(){
         for (int i = 0; i < sizeof(subject_marks)/sizeof(int); i++){
             total+=subject_marks[i];
